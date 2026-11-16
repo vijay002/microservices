@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "src\\gateway\\YarpReverseProxy\\YarpReverseProxy.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
+      },
+      {
+        "Path": "src\\services\\Auth.API\\Auth.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
+      },
+      {
+        "Path": "src\\services\\Notification.API\\Notification.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
+      },
+      {
+        "Path": "src\\services\\Ordering.API\\Ordering.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
+      }
+    ]
+  }
+]

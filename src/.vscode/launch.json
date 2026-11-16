@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run API",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/gateway/YarpReverseProxy/YarpReverseProxy.csproj"
+        },
+        {
+            "name": "Run Auth API",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/services/auth.api/auth.api.csproj"
+        },
+        {
+            "name": "Run Notification API",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/services/notification.api/notification.api.csproj"
+        },
+        {
+            "name": "Run Ordering API",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/services/ordering.api/ordering.api.csproj"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Run API + Web",
+            "configurations": [
+                "Run API",
+                "Run Auth API",
+                "Run Notification API",
+                "Run Ordering API"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+        "serviceActions": {
+            "yarpreverseproxy": "StartDebugging",
+            "auth.api": "StartDebugging",
+            "ordering.api": "StartDebugging",
+            "notification.api" : "StartDebugging"
+        }
+    }
+  }
+}

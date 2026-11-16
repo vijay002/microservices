@@ -1,0 +1,25 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/gateway/">
+    <Project Path="src/gateway/YarpReverseProxy/YarpReverseProxy.csproj" />
+  </Folder>
+  <Folder Name="/src/services/" />
+  <Folder Name="/src/services/auth/">
+    <Project Path="src/services/Auth.API/Auth.API.csproj" />
+  </Folder>
+  <Folder Name="/src/services/contract/">
+    <Project Path="src/services/Application/Application.csproj" />
+    <Project Path="src/services/Contracts/Contracts.csproj" />
+    <Project Path="src/services/Domain/Domain.csproj" />
+    <Project Path="src/services/Infrastructure/Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/services/notification/">
+    <Project Path="src/services/Notification.API/Notification.API.csproj" />
+  </Folder>
+  <Folder Name="/src/services/ordering/">
+    <Project Path="src/services/Ordering.API/Ordering.API.csproj" />
+  </Folder>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+</Solution>

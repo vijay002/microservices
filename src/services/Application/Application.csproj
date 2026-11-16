@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Features\BudgetManager\**" />
+    <Compile Remove="Features\CampaignManager\**" />
+    <Compile Remove="Features\CompanyManager\**" />
+    <Compile Remove="Features\CustomerCategoryManager\**" />
+    <Compile Remove="Features\CustomerContactManager\**" />
+    <Compile Remove="Features\CustomerGroupManager\**" />
+    <Compile Remove="Features\CustomerManager\**" />
+    <Compile Remove="Features\DashboardManager\**" />
+    <Compile Remove="Features\ExpenseManager\**" />
+    <EmbeddedResource Remove="Features\BudgetManager\**" />
+    <EmbeddedResource Remove="Features\CampaignManager\**" />
+    <EmbeddedResource Remove="Features\CompanyManager\**" />
+    <EmbeddedResource Remove="Features\CustomerCategoryManager\**" />
+    <EmbeddedResource Remove="Features\CustomerContactManager\**" />
+    <EmbeddedResource Remove="Features\CustomerGroupManager\**" />
+    <EmbeddedResource Remove="Features\CustomerManager\**" />
+    <EmbeddedResource Remove="Features\DashboardManager\**" />
+    <EmbeddedResource Remove="Features\ExpenseManager\**" />
+    <None Remove="Features\BudgetManager\**" />
+    <None Remove="Features\CampaignManager\**" />
+    <None Remove="Features\CompanyManager\**" />
+    <None Remove="Features\CustomerCategoryManager\**" />
+    <None Remove="Features\CustomerContactManager\**" />
+    <None Remove="Features\CustomerGroupManager\**" />
+    <None Remove="Features\CustomerManager\**" />
+    <None Remove="Features\DashboardManager\**" />
+    <None Remove="Features\ExpenseManager\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>

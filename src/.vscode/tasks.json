@@ -1,0 +1,54 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run API1",
+            "type": "process",
+            "command": "dotnet",
+            "args": ["run"],
+            "options": {
+                "cwd": "${workspaceFolder}/gateway/YarpReverseProxy"
+            },
+            "isBackground": true
+        },
+        {
+            "label": "Run API2",
+            "type": "process",
+            "command": "dotnet",
+            "args": ["run"],
+            "options": {
+                "cwd": "${workspaceFolder}/services/auth.api"
+            },
+            "isBackground": true
+        },
+        {
+            "label": "Run API3",
+            "type": "process",
+            "command": "dotnet",
+            "args": ["run"],
+            "options": {
+                "cwd": "${workspaceFolder}/services/notification.api"
+            },
+            "isBackground": true
+        },{
+            "label": "Run API4",
+            "type": "process",
+            "command": "dotnet",
+            "args": ["run"],
+            "options": {
+                "cwd": "${workspaceFolder}/services/ordering.api"
+            },
+            "isBackground": true
+        },
+        {
+            "label": "Run All APIs",
+            "dependsOn": [
+                "Run API1",
+                "Run API2",
+                "Run API3",
+                "Run API4"
+            ],
+            "dependsOrder": "parallel"
+        }
+    ]
+}

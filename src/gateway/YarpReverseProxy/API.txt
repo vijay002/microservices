@@ -1,0 +1,41 @@
+https://localhost:44388/auths/api/Auth/login
+
+{
+    "email":"admin",
+    "Password" :"123"
+}
+
+
+{
+    "email":"admin@root.com",
+    "Password" :"123456"
+}
+
+
+--------------------------------------------------------
+
+
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJVc2VyIiwiZXhwIjoxNzc5MDAzMTU1LCJpc3MiOiJNaWNyb3NlcnZpY2VzQXV0aFNlcnZlciIsImF1ZCI6Ik1pY3Jvc2VydmljZXNBdXRoU2VydmVyIn0.e0I8FwwC3dRfmFD2rIcOSRHVgk2xu6ZFcqljD2-1j2Q
+
+
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJVc2VyIiwiZXhwIjoxNzc5MDAzMTU1LCJpc3MiOiJNaWNyb3NlcnZpY2VzQXV0aFNlcnZlciIsImF1ZCI6Ik1pY3Jvc2VydmljZXNBdXRoU2VydmVyIn0.e0I8FwwC3dRfmFD2rIcOSRHVgk2xu6ZFcqljD2-1j2Q",
+  "user": {
+    "
+
+--------------------------------------------------------
+
+
+
+https://localhost:44388/orders/api/order?id=4245
+
+
+--------------------------------------------------------
+
+dotnet run --project gateway/YarpReverseProxy/YarpReverseProxy.csproj
+dotnet run --project services/auth.api/auth.api.csproj
+dotnet run --project services/notification.api/notification.api.csproj
+dotnet run --project services/ordering.api/ordering.api.csproj
+
+
+
+D:\projects\demo\microservices\microexample

@@ -1,0 +1,48 @@
+services:
+  yarpreverseproxy: 
+    image: myregistry.azurecr.io/yarpreverseproxy:v1
+    build:
+      context: .
+      dockerfile: src/gateway/YarpReverseProxy/Dockerfile
+    ports:
+      - "8081:8080"
+      - "8443:8081"
+    depends_on:
+    - auth.api
+    - ordering.api
+    - notification.api
+    
+  auth.api:
+    image: myregistry.azurecr.io/authapi:v1
+    build:
+      context: .
+      dockerfile: src/services/Auth.API/Dockerfile
+    #  environment:
+    #     ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=mymicroservice;User Id=userid;Password=Pass#12345;TrustServerCertificate=True;MultipleActiveResultSets=True;
+    #  depends_on:
+    #    - sqlserver
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=sa123
+    ports:
+      - "1433:1433"
+
+  ordering.api:
+    image: myregistry.azurecr.io/orderingapi:v1
+    build:
+      context: .
+      dockerfile: src/services/Ordering.API/Dockerfile
+    
+    
+  notification.api:
+    image: myregistry.azurecr.io/notificationapi:v1
+    build:
+       context: .
+       dockerfile: src/services/Notification.API/Dockerfile
+
+   
+ 
