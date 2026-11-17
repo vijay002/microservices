@@ -39,3 +39,18 @@ dotnet run --project services/ordering.api/ordering.api.csproj
 
 
 D:\projects\demo\microservices\microexample
+
+---------------------------------------------------
+Docker Compose
+---------------------------------------------------
+
+
+> git remote -v
+> ls
+
+> docker build -t vijay5/microservice
+
+
+  -- before that need to remove > docker compose down 
+
+
